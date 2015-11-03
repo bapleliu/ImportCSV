@@ -27,11 +27,7 @@ public class OverviewController extends HttpServlet {
         DAOContact daoContact = new DAOContact();
         List<Contact> contacts = daoContact.asList((pageNumber - 1) * recordsPerPage, recordsPerPage);
         int numberOfPages = 1;
-        try {
-            numberOfPages = (int) Math.ceil(daoContact.getLastId() / recordsPerPage);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        numberOfPages = (int) Math.ceil(daoContact.getLastId() / recordsPerPage);
         req.setAttribute("contacts", contacts);
         req.setAttribute("pageNumber", pageNumber);
         req.setAttribute("numberOfPages", numberOfPages);

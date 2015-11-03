@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html;charset=UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page language="java" contentType="text/html;charset=UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>List</title>
@@ -28,7 +28,7 @@
 </table>
 
 <%--Displaying link to previous. --%>
-<c:if test="${pageNumber != 1}">
+<c:if test="${pageNumber gt 1}">
     <td><a href="overview.jsp?page=${pageNumber-1}">Previous</a></td>
 </c:if>
 
