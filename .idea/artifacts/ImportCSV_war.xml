@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ImportCSV:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="ImportCSV.war">
+      <element id="artifact" artifact-name="ImportCSV:war exploded" />
+    </root>
+  </artifact>
+</component>
