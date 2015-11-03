@@ -17,7 +17,7 @@ public class DAOContact implements DAOInterface<Contact> {
             connectionController.update("USE " + DB_NAME);
             PreparedStatement preparedStatement
                     = connectionController.getConnection()
-                    .prepareStatement("INSERT INTO " + contact.getClass().getSimpleName() + " VALUES (?,?,?,?,?,?,?);");
+                    .prepareStatement("INSERT INTO " + contact.getClass().getSimpleName() + " VALUES(?,?,?,?,?,?,?);");
             preparedStatement.setInt(1, contact.getId());
             preparedStatement.setString(2, contact.getName());
             preparedStatement.setString(3, contact.getSurname());
@@ -78,7 +78,7 @@ public class DAOContact implements DAOInterface<Contact> {
         List<Contact> contacts = new ArrayList<>();
         try (ConnectionController connectionController = new ConnectionController()) {
             connectionController.update("USE " + DB_NAME);
-            ResultSet resultSet = connectionController.query("SELECT * FROM CONTACT" + ';');
+            ResultSet resultSet = connectionController.query("SELECT * FROM CONTACT;");
             while (resultSet.next()) {
                 Contact contact = new Contact();
                 contact.setId(resultSet.getInt("id"));
