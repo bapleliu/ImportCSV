@@ -22,7 +22,7 @@ import java.util.List;
 /**
  * Created by Denis on 24.10.2015.
  */
-@WebServlet(name = "import", urlPatterns = {"/import"})
+@WebServlet(urlPatterns = {"/import"})
 public class ImportController extends HttpServlet {
 
     @Override

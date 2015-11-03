@@ -17,14 +17,10 @@ public class ConnectionController implements AutoCloseable {
     private Statement statement = null;
 
     public ConnectionController() {
-        try {
-            BasicDataSource basicDataSource = DataSource.getInstance().getBasicDataSource();
-            try {
-                connection = basicDataSource.getConnection();
-                statement = connection.createStatement();
-            } finally {
-                basicDataSource.close();
-            }
+
+        try (BasicDataSource basicDataSource = DataSource.getInstance().getBasicDataSource()) {
+            connection = basicDataSource.getConnection();
+            statement = connection.createStatement();
         } catch (SQLException e) {
             e.printStackTrace();
         }

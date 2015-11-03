@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * Created by Denis on 28.10.2015.
  */
-@WebServlet(value = "overview", urlPatterns = {"/overview"})
+@WebServlet(urlPatterns = {"/overview"})
 public class OverviewController extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
