@@ -6,10 +6,6 @@
         <element id="directory" name="classes">
           <element id="module-output" name="ImportCSV" />
         </element>
-        <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.36" />
-          <element id="library" level="project" name="Maven: org.apache.commons:commons-csv:1.2" />
-        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/ImportCSV/META-INF/MANIFEST.MF" />

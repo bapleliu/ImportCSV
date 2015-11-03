@@ -15,13 +15,13 @@ import java.util.List;
 /**
  * Created by Denis on 28.10.2015.
  */
-@WebServlet(urlPatterns = {"/overview"})
-public class OverviewController extends HttpServlet{
+@WebServlet(name = "Overview", urlPatterns = {"/overview"})
+public class OverviewController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int pageNumber = 1;
         int recordsPerPage = 10;
-        if (null != req.getParameter("page")){
+        if (null != req.getParameter("page")) {
             pageNumber = Integer.parseInt(req.getParameter("page"));
         }
         DAOContact daoContact = new DAOContact();
