@@ -6,9 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9c80277-e90e-466e-8387-72abc59eceae" name="Default" comment="12.40 Return connection to pool!">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/context.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" />
+    <list default="true" id="b9c80277-e90e-466e-8387-72abc59eceae" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ImportCSV/WEB-INF/classes/repository/ConnectionController.class" afterPath="$PROJECT_DIR$/target/ImportCSV/WEB-INF/classes/repository/ConnectionController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/repository/ConnectionController.class" afterPath="$PROJECT_DIR$/target/classes/repository/ConnectionController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ImportCSV/WEB-INF/classes/repository/DAOContact.class" afterPath="$PROJECT_DIR$/target/ImportCSV/WEB-INF/classes/repository/DAOContact.class" />
@@ -17,11 +15,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/repository/DataSource.class" afterPath="$PROJECT_DIR$/target/classes/repository/DataSource.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ImportCSV/WEB-INF/classes/web/OverviewController.class" afterPath="$PROJECT_DIR$/target/ImportCSV/WEB-INF/classes/web/OverviewController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/web/OverviewController.class" afterPath="$PROJECT_DIR$/target/classes/web/OverviewController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/repository/DAOContact.java" afterPath="$PROJECT_DIR$/src/main/java/repository/DAOContact.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/repository/DataSource.java" afterPath="$PROJECT_DIR$/src/main/java/repository/DataSource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/web/OverviewController.java" afterPath="$PROJECT_DIR$/src/main/java/web/OverviewController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/classes/" />
     <ignored path="$PROJECT_DIR$/target/ImportCSV/" />
@@ -818,7 +811,7 @@
       <workItem from="1446547054717" duration="10314000" />
       <workItem from="1446564077451" duration="8980000" />
       <workItem from="1446629634627" duration="2125000" />
-      <workItem from="1446635351661" duration="4966000" />
+      <workItem from="1446635351661" duration="5014000" />
     </task>
     <task id="LOCAL-00001" summary="toootoo">
       <created>1446546038728</created>
@@ -886,11 +879,17 @@
       <option name="project" value="LOCAL" />
       <updated>1446630083314</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="15.32 Add db.properties and change ConnectionController">
+      <created>1446640366663</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1446640366663</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54667000" />
+    <option name="totallyTimeSpent" value="54715000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="960" height="1040" extended-state="0" />
@@ -943,7 +942,8 @@
     <MESSAGE value="toootoo" />
     <MESSAGE value="20:10 WEB.XML JSP EL WORKS!" />
     <MESSAGE value="12.40 Return connection to pool!" />
-    <option name="LAST_COMMIT_MESSAGE" value="12.40 Return connection to pool!" />
+    <MESSAGE value="15.32 Add db.properties and change ConnectionController" />
+    <option name="LAST_COMMIT_MESSAGE" value="15.32 Add db.properties and change ConnectionController" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
