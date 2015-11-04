@@ -72,7 +72,7 @@ public class DAOContact implements DAOInterface<Contact> {
     public List<Contact> asList() {
         List<Contact> contacts = new ArrayList<>();
         try (ConnectionController connectionController = new ConnectionController()) {
-            ResultSet resultSet = connectionController.query("SELECT * FROM CONTACT;");
+            ResultSet resultSet = connectionController.query("SELECT * FROM contact;");
             while (resultSet.next()) {
                 Contact contact = new Contact();
                 contact.setId(resultSet.getInt("id"));
