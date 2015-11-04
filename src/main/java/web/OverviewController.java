@@ -3,6 +3,7 @@ package web;
 import model.Contact;
 import repository.DAOContact;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,7 +16,7 @@ import java.util.List;
 /**
  * Created by Denis on 28.10.2015.
  */
-@WebServlet(name = "Overview", urlPatterns = {"/overview.jsp"})
+@WebServlet(name = "Overview", urlPatterns = {"/overview"})
 public class OverviewController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -32,8 +33,9 @@ public class OverviewController extends HttpServlet {
         req.setAttribute("contacts", contacts);
         req.setAttribute("pageNumber", pageNumber);
         req.setAttribute("numberOfPages", numberOfPages);
-        req.getRequestDispatcher("overview.jsp").forward(req, resp);
-
-
+        RequestDispatcher dispatcher = req.getRequestDispatcher("overview.jsp");
+        if (dispatcher != null){
+            dispatcher.forward(req, resp);
+        }
     }
 }

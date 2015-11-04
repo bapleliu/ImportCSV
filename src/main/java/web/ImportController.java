@@ -22,7 +22,7 @@ import java.util.List;
 /**
  * Created by Denis on 24.10.2015.
  */
-@WebServlet(name = "Import", urlPatterns = {"/import.jsp"})
+@WebServlet(name = "Import", urlPatterns = {"/import"})
 public class ImportController extends HttpServlet {
 
     @Override
@@ -36,7 +36,7 @@ public class ImportController extends HttpServlet {
     }
 
     private synchronized void importCSV(HttpServletRequest request) throws FileUploadException, IOException {
-        if (ServletFileUpload.isMultipartContent(request)) {
+        if (!ServletFileUpload.isMultipartContent(request)) {
             DiskFileItemFactory factory = new DiskFileItemFactory();
             ServletContext servletContext = this.getServletConfig().getServletContext();
             File repository = (File) servletContext.getAttribute("javax.servlet.context.tempdir");
@@ -46,18 +46,18 @@ public class ImportController extends HttpServlet {
             for (FileItem file : files) {
                 Reader reader = new InputStreamReader(file.getInputStream());
                 if (file.getName().endsWith(".csv")) {
-                    CSVParser parser = new CSVParser(reader, CSVFormat.DEFAULT);
+                    CSVParser parser = new CSVParser(reader, CSVFormat.EXCEL.withDelimiter(';'));
                     List<CSVRecord> csvRecords = parser.getRecords();
                     for (CSVRecord csvRecord : csvRecords) {
                         DAOContact daoContact = new DAOContact();
                         int currId = daoContact.getLastId() + 1;
-                        daoContact.update(new Contact(
+                        daoContact.add(new Contact(
                                 currId,
-                                csvRecord.get("Name"),
-                                csvRecord.get("Surname"),
-                                csvRecord.get("Login"),
-                                csvRecord.get("E-mail"),
-                                csvRecord.get("Phone Number"),
+                                csvRecord.get(1),
+                                csvRecord.get(2),
+                                csvRecord.get(3),
+                                csvRecord.get(4),
+                                csvRecord.get(5),
                                 0));
                     }
                 }
