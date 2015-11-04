@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * Created by Denis on 28.10.2015.
  */
-@WebServlet(name = "Overview", urlPatterns = {"/overview"})
+@WebServlet(name = "OverviewController", urlPatterns = {"/overview.do"})
 public class OverviewController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -26,10 +26,9 @@ public class OverviewController extends HttpServlet {
             pageNumber = Integer.parseInt(req.getParameter("page"));
         }
         DAOContact daoContact = new DAOContact();
-        List<Contact> contacts = daoContact.asList();
-        System.out.println("i'm here");
+        List<Contact> contacts = daoContact.asList((pageNumber - 1)*recordsPerPage, recordsPerPage );
         int numberOfPages = 1;
-        numberOfPages = (int) Math.ceil(daoContact.getLastId() / recordsPerPage);
+        numberOfPages = (int) Math.ceil(daoContact.getLastId() * 1.0 / recordsPerPage);
         req.setAttribute("contacts", contacts);
         req.setAttribute("pageNumber", pageNumber);
         req.setAttribute("numberOfPages", numberOfPages);

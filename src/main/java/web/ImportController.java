@@ -10,6 +10,7 @@ import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import repository.DAOContact;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -22,13 +23,18 @@ import java.util.List;
 /**
  * Created by Denis on 24.10.2015.
  */
-@WebServlet(name = "Import", urlPatterns = {"/import"})
+@WebServlet(name = "ImportController", urlPatterns = {"/import.do"})
 public class ImportController extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
             importCSV(req);
+            req.setAttribute("success", "Done!");
+            RequestDispatcher dispatcher = req.getRequestDispatcher("import.jsp");
+            if (dispatcher != null){
+                dispatcher.forward(req, resp);
+            }
         } catch (FileUploadException e) {
             e.printStackTrace();
         }

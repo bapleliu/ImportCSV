@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html;charset=UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
 <head>
     <title>List</title>
 </head>
@@ -29,7 +28,7 @@
 
 <%--Displaying link to previous. --%>
 <c:if test="${pageNumber gt 1}">
-    <td><a href="overview.jsp?page=${pageNumber-1}">Previous</a></td>
+    <td><a href="overview.do?page=${pageNumber-1}">Previous</a></td>
 </c:if>
 
 <%--Displaying number of page.--%>
@@ -41,7 +40,7 @@
                     <td>${i}</td>
                 </c:when>
                 <c:otherwise>
-                    <td><a href="overview.jsp?page=${i}">${i}</a></td>
+                    <td><a href="/overview.do?page=${i}">${i}</a></td>
                 </c:otherwise>
             </c:choose>
         </c:forEach>
@@ -50,7 +49,7 @@
 
 <%--Displaying link to next --%>
 <c:if test="${pageNumber lt numberOfPages}">
-    <td><a href="overview.jsp?page=${pageNumber + 1}">Next</a></td>
+    <td><a href="overview.do?page=${pageNumber + 1}">Next</a></td>
 </c:if>
 </body>
 </html>
