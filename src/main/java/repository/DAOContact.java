@@ -12,9 +12,17 @@ import java.util.List;
  * Created by Denis on 24.10.2015.
  */
 public class DAOContact implements DAOInterface<Contact> {
+    private BasicDataSource basicDataSource;
+
+    public DAOContact() {
+        this.basicDataSource = DataSource.getInstance().getBasicDataSource();
+    }
 
     public void add(Contact contact) {
-        try (BasicDataSource basicDataSource = DataSource.getInstance().getBasicDataSource()) {
+        if (null == basicDataSource) {
+            basicDataSource = DataSource.getInstance().getBasicDataSource();
+        }
+        try {
             Connection connection = basicDataSource.getConnection();
             PreparedStatement preparedStatement
                     = connection.prepareStatement("INSERT INTO " + contact.getClass().getSimpleName() + " VALUES(?,?,?,?,?,?,?);");
@@ -33,7 +41,10 @@ public class DAOContact implements DAOInterface<Contact> {
     }
 
     public void update(Contact contact) {
-        try (BasicDataSource basicDataSource = DataSource.getInstance().getBasicDataSource()) {
+        if (null == basicDataSource) {
+            basicDataSource = DataSource.getInstance().getBasicDataSource();
+        }
+        try {
             Connection connection = basicDataSource.getConnection();
             PreparedStatement preparedStatement
                     = connection.prepareStatement("UPDATE " + contact.getClass().getSimpleName()
@@ -53,7 +64,10 @@ public class DAOContact implements DAOInterface<Contact> {
     }
 
     public void delete(Contact contact) {
-        try (BasicDataSource basicDataSource = DataSource.getInstance().getBasicDataSource()) {
+        if (null == basicDataSource) {
+            basicDataSource = DataSource.getInstance().getBasicDataSource();
+        }
+        try {
             Connection connection = basicDataSource.getConnection();
             Statement statement = connection.createStatement();
             statement.executeUpdate("UPDATE " + contact.getClass().getSimpleName() +
@@ -64,7 +78,10 @@ public class DAOContact implements DAOInterface<Contact> {
     }
 
     public void recover(Contact contact) {
-        try (BasicDataSource basicDataSource = DataSource.getInstance().getBasicDataSource()) {
+        if (null == basicDataSource) {
+            basicDataSource = DataSource.getInstance().getBasicDataSource();
+        }
+        try {
             Connection connection = basicDataSource.getConnection();
             Statement statement = connection.createStatement();
             statement.executeUpdate("UPDATE " + contact.getClass().getSimpleName() +
@@ -77,7 +94,10 @@ public class DAOContact implements DAOInterface<Contact> {
     @Override
     public List<Contact> asList() {
         List<Contact> contacts = new ArrayList<>();
-        try (BasicDataSource basicDataSource = DataSource.getInstance().getBasicDataSource()) {
+        if (null == basicDataSource) {
+            basicDataSource = DataSource.getInstance().getBasicDataSource();
+        }
+        try {
             Connection connection = basicDataSource.getConnection();
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("SELECT * FROM contact;");
@@ -100,7 +120,10 @@ public class DAOContact implements DAOInterface<Contact> {
     @Override
     public List<Contact> asList(int offset, int number) {
         List<Contact> contacts = new ArrayList<>();
-        try (BasicDataSource basicDataSource = DataSource.getInstance().getBasicDataSource()) {
+        if (null == basicDataSource) {
+            basicDataSource = DataSource.getInstance().getBasicDataSource();
+        }
+        try {
             Connection connection = basicDataSource.getConnection();
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("SELECT SQL_CALC_FOUND_ROWS * FROM contact limit "
@@ -123,7 +146,10 @@ public class DAOContact implements DAOInterface<Contact> {
 
     public int getLastId() {
         int res = 0;
-        try (BasicDataSource basicDataSource = DataSource.getInstance().getBasicDataSource()) {
+        if (null == basicDataSource) {
+            basicDataSource = DataSource.getInstance().getBasicDataSource();
+        }
+        try {
             Connection connection = basicDataSource.getConnection();
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("SELECT MAX(id) FROM contact;");

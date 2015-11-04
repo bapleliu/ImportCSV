@@ -7,17 +7,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9c80277-e90e-466e-8387-72abc59eceae" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/dbConfig.properties" />
+      <change type="DELETED" beforePath="C:\Users\Denis\IdeaProjects\ImportCSV\src\main\resources\db.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Denis\IdeaProjects\ImportCSV\src\main\webapp\WEB-INF\context.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Denis\IdeaProjects\ImportCSV\target\ImportCSV\WEB-INF\classes\repository\ConnectionController.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ImportCSV/WEB-INF/classes/repository/DAOContact.class" afterPath="$PROJECT_DIR$/target/ImportCSV/WEB-INF/classes/repository/DAOContact.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/repository/DAOContact.class" afterPath="$PROJECT_DIR$/target/classes/repository/DAOContact.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ImportCSV/WEB-INF/classes/repository/DataSource.class" afterPath="$PROJECT_DIR$/target/ImportCSV/WEB-INF/classes/repository/DataSource.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/repository/DataSource.class" afterPath="$PROJECT_DIR$/target/classes/repository/DataSource.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ImportCSV.war" afterPath="$PROJECT_DIR$/target/ImportCSV.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ImportCSV/WEB-INF/classes/web/ImportController.class" afterPath="$PROJECT_DIR$/target/ImportCSV/WEB-INF/classes/web/ImportController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/web/ImportController.class" afterPath="$PROJECT_DIR$/target/classes/web/ImportController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ImportCSV/WEB-INF/classes/web/OverviewController.class" afterPath="$PROJECT_DIR$/target/ImportCSV/WEB-INF/classes/web/OverviewController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/web/OverviewController.class" afterPath="$PROJECT_DIR$/target/classes/web/OverviewController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/repository/DAOContact.java" afterPath="$PROJECT_DIR$/src/main/java/repository/DAOContact.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/repository/DataSource.java" afterPath="$PROJECT_DIR$/src/main/java/repository/DataSource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImportCSV.iml" afterPath="$PROJECT_DIR$/ImportCSV.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/web/ImportController.java" afterPath="$PROJECT_DIR$/src/main/java/web/ImportController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/web/OverviewController.java" afterPath="$PROJECT_DIR$/src/main/java/web/OverviewController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/import.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/import.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ImportCSV/import.jsp" afterPath="$PROJECT_DIR$/target/ImportCSV/import.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ImportCSV/index.jsp" afterPath="$PROJECT_DIR$/target/ImportCSV/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/overview.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/overview.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ImportCSV/overview.jsp" afterPath="$PROJECT_DIR$/target/ImportCSV/overview.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ImportCSV/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/ImportCSV/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/classes/" />
@@ -46,31 +58,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="overview.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/overview.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-35.96154">
-              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617">
-              <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImportController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ImportController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/web/ImportController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.88214904">
+              <caret line="75" column="71" selection-start-line="75" selection-start-column="71" selection-end-line="75" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -88,30 +80,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DAOContact.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DAOContact.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/repository/DAOContact.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4882943">
-              <caret line="125" column="17" selection-start-line="125" selection-start-column="17" selection-end-line="125" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="53" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="53" />
               <folding>
-                <marker date="1446645015960" expanded="true" signature="590:666" placeholder="INSERT INTO ..." />
-                <marker date="1446645015960" expanded="true" signature="1554:1741" placeholder="UPDATE missi..." />
-                <marker date="1446645015960" expanded="true" signature="2596:2691" placeholder="UPDATE missi..." />
-                <marker date="1446645015960" expanded="true" signature="3113:3208" placeholder="UPDATE missi..." />
-                <marker date="1446645015960" expanded="true" signature="3710:3731" placeholder="SELECT * FRO..contact..." />
-                <marker date="1446645015960" expanded="true" signature="4787:4871" placeholder="SELECT SQL_C..contact..." />
-                <marker date="1446645015960" expanded="true" signature="5867:5894" placeholder="SELECT MAX(i..contact..." />
+                <element signature="e#356#357#0" expanded="true" />
+                <element signature="e#440#441#0" expanded="true" />
+                <marker date="1446650371268" expanded="true" signature="790:866" placeholder="INSERT INTO ..." />
+                <marker date="1446650371268" expanded="true" signature="1798:1985" placeholder="UPDATE missi..." />
+                <marker date="1446650371268" expanded="true" signature="2884:2979" placeholder="UPDATE missi..." />
+                <marker date="1446650371268" expanded="true" signature="3445:3540" placeholder="UPDATE missi..." />
+                <marker date="1446650371268" expanded="true" signature="4086:4107" placeholder="SELECT * FRO..contact..." />
+                <marker date="1446650371268" expanded="true" signature="5207:5291" placeholder="SELECT SQL_C..contact..." />
+                <marker date="1446650371268" expanded="true" signature="6331:6358" placeholder="SELECT MAX(i..contact..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="import.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/import.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -120,18 +104,42 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/repository/DataSource.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1871#1872#0" expanded="true" />
-                <element signature="e#1909#1910#0" expanded="true" />
-                <element signature="e#1980#1981#0" expanded="true" />
-                <element signature="e#2034#2035#0" expanded="true" />
-                <element signature="e#2075#2076#0" expanded="true" />
-                <element signature="e#2108#2109#0" expanded="true" />
-                <element signature="e#2164#2165#0" expanded="true" />
-                <element signature="e#2208#2209#0" expanded="true" />
+                <element signature="e#1879#1880#0" expanded="true" />
+                <element signature="e#1927#1928#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="import.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/import.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.576923">
+              <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="87" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.576923">
+              <caret line="7" column="87" selection-start-line="7" selection-start-column="87" selection-end-line="7" selection-end-column="87" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="overview.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/overview.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.1923075">
+              <caret line="8" column="87" selection-start-line="8" selection-start-column="87" selection-end-line="8" selection-end-column="87" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -140,31 +148,30 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/repository/Test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+              <caret line="27" column="61" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1446645195736" expanded="true" signature="487:500" placeholder="SELECT MAX(i..." />
-                <marker date="1446645195736" expanded="true" signature="487:514" placeholder="SELECT MAX(i..contact..." />
+                <marker date="1446670105839" expanded="true" signature="612:639" placeholder="SELECT MAX(i..contact..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="context.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/context.xml">
+      <file leaf-file-name="dbConfig.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/dbConfig.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+      <file leaf-file-name="ImportCSV.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ImportCSV.iml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -204,22 +211,24 @@
         <option value="$PROJECT_DIR$/src/main/java/model/Contact.java" />
         <option value="$PROJECT_DIR$/src/main/java/repository/DAOInterface.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/dfg.jsp" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/as.tld" />
         <option value="$PROJECT_DIR$/src/main/resources/config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/repository/DBConnector.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/context.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/repository/DataSource.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
         <option value="$PROJECT_DIR$/src/main/java/repository/ConnectionController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/repository/DAOContact.java" />
-        <option value="$PROJECT_DIR$/src/main/java/repository/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/overview.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/web/OverviewController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/web/ImportController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/repository/DAOContact.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/ImportCSV.iml" />
+        <option value="$PROJECT_DIR$/src/main/resources/dbConfig.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/repository/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repository/DataSource.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/import.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/overview.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/web/ImportController.java" />
       </list>
     </option>
   </component>
@@ -252,10 +261,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -280,9 +287,9 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -462,36 +469,26 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Denis\IdeaProjects\ImportCSV\src\main\resources" />
       <recent name="C:\Users\Denis\IdeaProjects\ImportCSV\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\Denis\IdeaProjects\ImportCSV\src\main\java\repository" />
+      <recent name="C:\Users\Denis\IdeaProjects\ImportCSV\src\main\java\resources" />
+      <recent name="C:\Users\Denis\IdeaProjects\ImportCSV\src\main\webapp\WEB-INF\classes\resources" />
+      <recent name="C:\Users\Denis\IdeaProjects\ImportCSV\src\main\webapp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Denis\IdeaProjects\ImportCSV\src\main\java" />
+      <recent name="C:\Users\Denis\IdeaProjects\ImportCSV\src\main" />
+      <recent name="C:\Users\Denis\IdeaProjects\ImportCSV\src" />
+      <recent name="C:\Users\Denis\IdeaProjects\ImportCSV" />
+      <recent name="C:\Users\Denis\IdeaProjects\ImportCSV\src\main\webapp" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.0.28">
-    <configuration default="false" name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="repository.Test" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="ImportCSV" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings>
@@ -793,6 +790,7 @@
       <method />
     </configuration>
     <configuration default="false" name="Tomcat 8.0.28" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.28" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="ImportCSV:war exploded">
@@ -864,15 +862,30 @@
         </option>
       </method>
     </configuration>
+    <configuration default="false" name="Test" type="Application" factoryName="Application" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="repository.Test" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ImportCSV" />
+      <envs />
+      <method />
+    </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 8.0.28" />
       <item index="1" class="java.lang.String" itemvalue="Application.Test" />
     </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.Test" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
@@ -890,7 +903,9 @@
       <workItem from="1446547054717" duration="10314000" />
       <workItem from="1446564077451" duration="8980000" />
       <workItem from="1446629634627" duration="2125000" />
-      <workItem from="1446635351661" duration="13346000" />
+      <workItem from="1446635351661" duration="15133000" />
+      <workItem from="1446651035100" duration="3390000" />
+      <workItem from="1446666472067" duration="5120000" />
     </task>
     <task id="LOCAL-00001" summary="toootoo">
       <created>1446546038728</created>
@@ -988,14 +1003,20 @@
       <option name="project" value="LOCAL" />
       <updated>1446646954425</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="17.52 Closely working">
+      <created>1446648786042</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1446648786042</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63047000" />
+    <option name="totallyTimeSpent" value="73344000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="0" width="960" height="1040" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1003,15 +1024,15 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32223415" sideWeight="0.49364406" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33896515" sideWeight="0.5208333" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33896515" sideWeight="0.5229167" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="455" y="60" width="405" height="386" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.4957627" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33896515" sideWeight="0.47916666" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3501611" sideWeight="0.47708333" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13229166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26800847" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1048,7 +1069,8 @@
     <MESSAGE value="15.32 Add db.properties and change ConnectionController" />
     <MESSAGE value="16.53 Delete ConnectionController" />
     <MESSAGE value="17.22 Mapping" />
-    <option name="LAST_COMMIT_MESSAGE" value="17.22 Mapping" />
+    <MESSAGE value="17.52 Closely working" />
+    <option name="LAST_COMMIT_MESSAGE" value="17.52 Closely working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1064,18 +1086,51 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/import.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/DataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1879#1880#0" expanded="true" />
+            <element signature="e#1927#1928#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1446670105839" expanded="true" signature="612:639" placeholder="SELECT MAX(i..contact..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/repository/DAOContact.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
           <folding>
-            <marker date="1446645015960" expanded="true" signature="590:666" placeholder="INSERT INTO ..." />
-            <marker date="1446645015960" expanded="true" signature="1554:1741" placeholder="UPDATE missi..." />
-            <marker date="1446645015960" expanded="true" signature="2596:2691" placeholder="UPDATE missi..." />
-            <marker date="1446645015960" expanded="true" signature="3113:3208" placeholder="UPDATE missi..." />
-            <marker date="1446645015960" expanded="true" signature="3710:3731" placeholder="SELECT * FRO..contact..." />
-            <marker date="1446645015960" expanded="true" signature="4787:4871" placeholder="SELECT SQL_C..contact..." />
-            <marker date="1446645015960" expanded="true" signature="5867:5894" placeholder="SELECT MAX(i..contact..." />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <marker date="1446650371268" expanded="true" signature="790:866" placeholder="INSERT INTO ..." />
+            <marker date="1446650371268" expanded="true" signature="1798:1985" placeholder="UPDATE missi..." />
+            <marker date="1446650371268" expanded="true" signature="2884:2979" placeholder="UPDATE missi..." />
+            <marker date="1446650371268" expanded="true" signature="3445:3540" placeholder="UPDATE missi..." />
+            <marker date="1446650371268" expanded="true" signature="4086:4107" placeholder="SELECT * FRO..contact..." />
+            <marker date="1446650371268" expanded="true" signature="5207:5291" placeholder="SELECT SQL_C..contact..." />
+            <marker date="1446650371268" expanded="true" signature="6331:6358" placeholder="SELECT MAX(i..contact..." />
           </folding>
         </state>
       </provider>
@@ -1086,14 +1141,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1871#1872#0" expanded="true" />
-            <element signature="e#1909#1910#0" expanded="true" />
-            <element signature="e#1980#1981#0" expanded="true" />
-            <element signature="e#2034#2035#0" expanded="true" />
-            <element signature="e#2075#2076#0" expanded="true" />
-            <element signature="e#2108#2109#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
-            <element signature="e#2208#2209#0" expanded="true" />
+            <element signature="e#1879#1880#0" expanded="true" />
+            <element signature="e#1927#1928#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1151,13 +1200,15 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="88" column="66" selection-start-line="88" selection-start-column="66" selection-end-line="88" selection-end-column="66" />
           <folding>
-            <marker date="1446645015960" expanded="true" signature="590:666" placeholder="INSERT INTO ..." />
-            <marker date="1446645015960" expanded="true" signature="1554:1741" placeholder="UPDATE missi..." />
-            <marker date="1446645015960" expanded="true" signature="2596:2691" placeholder="UPDATE missi..." />
-            <marker date="1446645015960" expanded="true" signature="3113:3208" placeholder="UPDATE missi..." />
-            <marker date="1446645015960" expanded="true" signature="3710:3731" placeholder="SELECT * FRO..contact..." />
-            <marker date="1446645015960" expanded="true" signature="4787:4871" placeholder="SELECT SQL_C..contact..." />
-            <marker date="1446645015960" expanded="true" signature="5867:5894" placeholder="SELECT MAX(i..contact..." />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <marker date="1446650371268" expanded="true" signature="790:866" placeholder="INSERT INTO ..." />
+            <marker date="1446650371268" expanded="true" signature="1798:1985" placeholder="UPDATE missi..." />
+            <marker date="1446650371268" expanded="true" signature="2884:2979" placeholder="UPDATE missi..." />
+            <marker date="1446650371268" expanded="true" signature="3445:3540" placeholder="UPDATE missi..." />
+            <marker date="1446650371268" expanded="true" signature="4086:4107" placeholder="SELECT * FRO..contact..." />
+            <marker date="1446650371268" expanded="true" signature="5207:5291" placeholder="SELECT SQL_C..contact..." />
+            <marker date="1446650371268" expanded="true" signature="6331:6358" placeholder="SELECT MAX(i..contact..." />
           </folding>
         </state>
       </provider>
@@ -1166,7 +1217,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1176,14 +1226,8 @@
           <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1871#1872#0" expanded="true" />
-            <element signature="e#1909#1910#0" expanded="true" />
-            <element signature="e#1980#1981#0" expanded="true" />
-            <element signature="e#2034#2035#0" expanded="true" />
-            <element signature="e#2075#2076#0" expanded="true" />
-            <element signature="e#2108#2109#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
-            <element signature="e#2208#2209#0" expanded="true" />
+            <element signature="e#1879#1880#0" expanded="true" />
+            <element signature="e#1927#1928#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1241,13 +1285,15 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="88" column="66" selection-start-line="88" selection-start-column="66" selection-end-line="88" selection-end-column="66" />
           <folding>
-            <marker date="1446645015960" expanded="true" signature="590:666" placeholder="INSERT INTO ..." />
-            <marker date="1446645015960" expanded="true" signature="1554:1741" placeholder="UPDATE missi..." />
-            <marker date="1446645015960" expanded="true" signature="2596:2691" placeholder="UPDATE missi..." />
-            <marker date="1446645015960" expanded="true" signature="3113:3208" placeholder="UPDATE missi..." />
-            <marker date="1446645015960" expanded="true" signature="3710:3731" placeholder="SELECT * FRO..contact..." />
-            <marker date="1446645015960" expanded="true" signature="4787:4871" placeholder="SELECT SQL_C..contact..." />
-            <marker date="1446645015960" expanded="true" signature="5867:5894" placeholder="SELECT MAX(i..contact..." />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <marker date="1446650371268" expanded="true" signature="790:866" placeholder="INSERT INTO ..." />
+            <marker date="1446650371268" expanded="true" signature="1798:1985" placeholder="UPDATE missi..." />
+            <marker date="1446650371268" expanded="true" signature="2884:2979" placeholder="UPDATE missi..." />
+            <marker date="1446650371268" expanded="true" signature="3445:3540" placeholder="UPDATE missi..." />
+            <marker date="1446650371268" expanded="true" signature="4086:4107" placeholder="SELECT * FRO..contact..." />
+            <marker date="1446650371268" expanded="true" signature="5207:5291" placeholder="SELECT SQL_C..contact..." />
+            <marker date="1446650371268" expanded="true" signature="6331:6358" placeholder="SELECT MAX(i..contact..." />
           </folding>
         </state>
       </provider>
@@ -1256,7 +1302,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1266,14 +1311,8 @@
           <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1871#1872#0" expanded="true" />
-            <element signature="e#1909#1910#0" expanded="true" />
-            <element signature="e#1980#1981#0" expanded="true" />
-            <element signature="e#2034#2035#0" expanded="true" />
-            <element signature="e#2075#2076#0" expanded="true" />
-            <element signature="e#2108#2109#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
-            <element signature="e#2208#2209#0" expanded="true" />
+            <element signature="e#1879#1880#0" expanded="true" />
+            <element signature="e#1927#1928#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1305,13 +1344,15 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="82" column="19" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
           <folding>
-            <marker date="1446645015960" expanded="true" signature="590:666" placeholder="INSERT INTO ..." />
-            <marker date="1446645015960" expanded="true" signature="1554:1741" placeholder="UPDATE missi..." />
-            <marker date="1446645015960" expanded="true" signature="2596:2691" placeholder="UPDATE missi..." />
-            <marker date="1446645015960" expanded="true" signature="3113:3208" placeholder="UPDATE missi..." />
-            <marker date="1446645015960" expanded="true" signature="3710:3731" placeholder="SELECT * FRO..contact..." />
-            <marker date="1446645015960" expanded="true" signature="4787:4871" placeholder="SELECT SQL_C..contact..." />
-            <marker date="1446645015960" expanded="true" signature="5867:5894" placeholder="SELECT MAX(i..contact..." />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <marker date="1446650371268" expanded="true" signature="790:866" placeholder="INSERT INTO ..." />
+            <marker date="1446650371268" expanded="true" signature="1798:1985" placeholder="UPDATE missi..." />
+            <marker date="1446650371268" expanded="true" signature="2884:2979" placeholder="UPDATE missi..." />
+            <marker date="1446650371268" expanded="true" signature="3445:3540" placeholder="UPDATE missi..." />
+            <marker date="1446650371268" expanded="true" signature="4086:4107" placeholder="SELECT * FRO..contact..." />
+            <marker date="1446650371268" expanded="true" signature="5207:5291" placeholder="SELECT SQL_C..contact..." />
+            <marker date="1446650371268" expanded="true" signature="6331:6358" placeholder="SELECT MAX(i..contact..." />
           </folding>
         </state>
       </provider>
@@ -1372,18 +1413,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -1392,76 +1425,59 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/context.xml">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/sql/DriverManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding />
+          <caret line="314" column="0" selection-start-line="314" selection-start-column="0" selection-end-line="314" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26959#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#4492#4493#0" expanded="false" />
+            <element signature="e#4528#4529#0" expanded="false" />
+            <element signature="e#17838#17839#0" expanded="false" />
+            <element signature="e#17876#17877#0" expanded="false" />
+            <element signature="e#18136#18137#0" expanded="false" />
+            <element signature="e#18173#18174#0" expanded="false" />
+            <element signature="e#19826#19827#0" expanded="false" />
+            <element signature="e#19858#19859#0" expanded="false" />
+            <element signature="e#21404#21405#0" expanded="false" />
+            <element signature="e#21485#21486#0" expanded="false" />
+            <element signature="e#26755#26756#0" expanded="false" />
+            <element signature="e#26795#26796#0" expanded="false" />
+            <element signature="e#26841#26842#0" expanded="false" />
+            <element signature="e#26901#26902#0" expanded="false" />
+            <element signature="e#26930#26931#0" expanded="false" />
+            <element signature="e#26955#26956#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/io/FileInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33277592">
-          <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/DataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1871#1872#0" expanded="true" />
-            <element signature="e#1909#1910#0" expanded="true" />
-            <element signature="e#1980#1981#0" expanded="true" />
-            <element signature="e#2034#2035#0" expanded="true" />
-            <element signature="e#2075#2076#0" expanded="true" />
-            <element signature="e#2108#2109#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
-            <element signature="e#2208#2209#0" expanded="true" />
+            <element signature="e#0#14284#0" expanded="false" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/Test.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1446645195736" expanded="true" signature="487:500" placeholder="SELECT MAX(i..." />
-            <marker date="1446645195736" expanded="true" signature="487:514" placeholder="SELECT MAX(i..contact..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/overview.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-35.96154">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <caret line="67" column="47" selection-start-line="67" selection-start-column="47" selection-end-line="67" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/ImportCSV.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -1476,35 +1492,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/web/ImportController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dbConfig.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/import.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/repository/DAOContact.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4882943">
-          <caret line="125" column="17" selection-start-line="125" selection-start-column="17" selection-end-line="125" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="53" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="53" />
           <folding>
-            <marker date="1446645015960" expanded="true" signature="590:666" placeholder="INSERT INTO ..." />
-            <marker date="1446645015960" expanded="true" signature="1554:1741" placeholder="UPDATE missi..." />
-            <marker date="1446645015960" expanded="true" signature="2596:2691" placeholder="UPDATE missi..." />
-            <marker date="1446645015960" expanded="true" signature="3113:3208" placeholder="UPDATE missi..." />
-            <marker date="1446645015960" expanded="true" signature="3710:3731" placeholder="SELECT * FRO..contact..." />
-            <marker date="1446645015960" expanded="true" signature="4787:4871" placeholder="SELECT SQL_C..contact..." />
-            <marker date="1446645015960" expanded="true" signature="5867:5894" placeholder="SELECT MAX(i..contact..." />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <marker date="1446650371268" expanded="true" signature="790:866" placeholder="INSERT INTO ..." />
+            <marker date="1446650371268" expanded="true" signature="1798:1985" placeholder="UPDATE missi..." />
+            <marker date="1446650371268" expanded="true" signature="2884:2979" placeholder="UPDATE missi..." />
+            <marker date="1446650371268" expanded="true" signature="3445:3540" placeholder="UPDATE missi..." />
+            <marker date="1446650371268" expanded="true" signature="4086:4107" placeholder="SELECT * FRO..contact..." />
+            <marker date="1446650371268" expanded="true" signature="5207:5291" placeholder="SELECT SQL_C..contact..." />
+            <marker date="1446650371268" expanded="true" signature="6331:6358" placeholder="SELECT MAX(i..contact..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="61" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1446670105839" expanded="true" signature="612:639" placeholder="SELECT MAX(i..contact..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/DataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1879#1880#0" expanded="true" />
+            <element signature="e#1927#1928#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/import.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="7" column="87" selection-start-line="7" selection-start-column="87" selection-end-line="7" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/overview.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.1923075">
+          <caret line="8" column="87" selection-start-line="8" selection-start-column="87" selection-end-line="8" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/web/ImportController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.88214904">
+          <caret line="75" column="71" selection-start-line="75" selection-start-column="71" selection-end-line="75" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1562,12 +1627,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>ImportCSV</last-edited>
+          <last-edited>Web|ImportCSV</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

@@ -32,7 +32,7 @@ public class ImportController extends HttpServlet {
             importCSV(req);
             req.setAttribute("success", "Done!");
             RequestDispatcher dispatcher = req.getRequestDispatcher("import.jsp");
-            if (dispatcher != null){
+            if (dispatcher != null) {
                 dispatcher.forward(req, resp);
             }
         } catch (FileUploadException e) {
@@ -42,34 +42,38 @@ public class ImportController extends HttpServlet {
     }
 
     private synchronized void importCSV(HttpServletRequest request) throws FileUploadException, IOException {
-        if (!ServletFileUpload.isMultipartContent(request)) {
+        if (ServletFileUpload.isMultipartContent(request)) {
             DiskFileItemFactory factory = new DiskFileItemFactory();
             ServletContext servletContext = this.getServletConfig().getServletContext();
             File repository = (File) servletContext.getAttribute("javax.servlet.context.tempdir");
             factory.setRepository(repository);
             ServletFileUpload upload = new ServletFileUpload(factory);
             List<FileItem> files = upload.parseRequest(request);
+            List<CSVRecord> csvRecords = null;
             for (FileItem file : files) {
                 Reader reader = new InputStreamReader(file.getInputStream());
                 if (file.getName().endsWith(".csv")) {
                     CSVParser parser = new CSVParser(reader, CSVFormat.EXCEL.withDelimiter(';'));
-                    List<CSVRecord> csvRecords = parser.getRecords();
-                    for (CSVRecord csvRecord : csvRecords) {
-                        DAOContact daoContact = new DAOContact();
-                        int currId = daoContact.getLastId() + 1;
-                        daoContact.add(new Contact(
-                                currId,
-                                csvRecord.get(1),
-                                csvRecord.get(2),
-                                csvRecord.get(3),
-                                csvRecord.get(4),
-                                csvRecord.get(5),
-                                0));
-                    }
+                    csvRecords = parser.getRecords();
+                } else {
+                    request.setAttribute("success", "Not .csv file, try again.");
                 }
             }
+            DAOContact daoContact = new DAOContact();
+            int currId = daoContact.getLastId() + 1;
+            for (CSVRecord csvRecord : csvRecords) {
+                daoContact.add(new Contact(
+                        currId,
+                        csvRecord.get(0),
+                        csvRecord.get(1),
+                        csvRecord.get(2),
+                        csvRecord.get(3),
+                        csvRecord.get(4),
+                        0));
+                currId++;
+            }
         } else {
-            System.out.println("Multidownload not allowed.");
+            request.setAttribute("success", "Multidownload not allowed.");
         }
 
     }
