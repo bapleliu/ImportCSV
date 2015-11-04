@@ -41,7 +41,15 @@ public class ConnectionController implements AutoCloseable {
 
     @Override
     public void close() {
-        connection = null;
-        statement = null;
+        try {
+            if (null != statement) {
+                statement.close();
+            }
+            if (null != connection) {
+                connection.close();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }
