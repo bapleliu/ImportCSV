@@ -10,11 +10,9 @@ import java.util.List;
  * Created by Denis on 24.10.2015.
  */
 public class DAOContact implements DAOInterface<Contact> {
-    private final String DB_NAME = "CSV";
 
     public void add(Contact contact) {
         try (ConnectionController connectionController = new ConnectionController()) {
-            connectionController.update("USE " + DB_NAME);
             PreparedStatement preparedStatement
                     = connectionController.getConnection()
                     .prepareStatement("INSERT INTO " + contact.getClass().getSimpleName() + " VALUES(?,?,?,?,?,?,?);");
@@ -34,7 +32,6 @@ public class DAOContact implements DAOInterface<Contact> {
 
     public void update(Contact contact) {
         try (ConnectionController connectionController = new ConnectionController()) {
-            connectionController.update("USE " + DB_NAME);
             PreparedStatement preparedStatement
                     = connectionController.getConnection()
                     .prepareStatement("UPDATE " + contact.getClass().getSimpleName()
@@ -55,7 +52,6 @@ public class DAOContact implements DAOInterface<Contact> {
 
     public void delete(Contact contact) {
         try (ConnectionController connectionController = new ConnectionController()) {
-            connectionController.update("USE " + DB_NAME);
             connectionController.update("UPDATE " + contact.getClass().getSimpleName() +
                     " SET statusDel=1 WHERE id=" + contact.getId() + ';');
         } catch (SQLException e) {
@@ -65,7 +61,6 @@ public class DAOContact implements DAOInterface<Contact> {
 
     public void recover(Contact contact) {
         try (ConnectionController connectionController = new ConnectionController()) {
-            connectionController.update("USE " + DB_NAME);
             connectionController.update("UPDATE " + contact.getClass().getSimpleName() +
                     " SET statusDel=0 WHERE id=" + contact.getId() + ';');
         } catch (SQLException e) {
@@ -77,7 +72,6 @@ public class DAOContact implements DAOInterface<Contact> {
     public List<Contact> asList() {
         List<Contact> contacts = new ArrayList<>();
         try (ConnectionController connectionController = new ConnectionController()) {
-            connectionController.update("USE " + DB_NAME);
             ResultSet resultSet = connectionController.query("SELECT * FROM CONTACT;");
             while (resultSet.next()) {
                 Contact contact = new Contact();
@@ -99,7 +93,6 @@ public class DAOContact implements DAOInterface<Contact> {
     public List<Contact> asList(int offset, int number) {
         List<Contact> contacts = new ArrayList<>();
         try (ConnectionController connectionController = new ConnectionController()) {
-            connectionController.update("USE " + DB_NAME);
             ResultSet resultSet = connectionController.query("SELECT SQL_CALC_FOUND_ROWS * FROM contact limit "
                     + offset + ", " + number + ';');
             while (resultSet.next()) {
@@ -121,7 +114,6 @@ public class DAOContact implements DAOInterface<Contact> {
     public int getLastId() {
         int res = 0;
         try (ConnectionController connectionController = new ConnectionController()) {
-            connectionController.update("USE " + DB_NAME);
             ResultSet resultSet = connectionController.query("SELECT MAX(id) FROM contact;");
             if (resultSet.next()) {
                 res = resultSet.getInt(1);

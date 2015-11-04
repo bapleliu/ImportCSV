@@ -26,6 +26,7 @@ public class OverviewController extends HttpServlet {
         }
         DAOContact daoContact = new DAOContact();
         List<Contact> contacts = daoContact.asList((pageNumber - 1) * recordsPerPage, recordsPerPage);
+        System.out.println("i'm here");
         int numberOfPages = 1;
         numberOfPages = (int) Math.ceil(daoContact.getLastId() / recordsPerPage);
         req.setAttribute("contacts", contacts);
