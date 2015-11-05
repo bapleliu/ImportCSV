@@ -17,7 +17,7 @@ public class DataSource {
     private static final String DB_URL = "jdbc:mysql://localhost:3306/mysql";
     private static final String DB_USER = "root";
     private static final String DB_PASSWORD = "root";
-    private static final int CONN_POOL_SIZE = 10;
+    private static final int CONN_POOL_SIZE = 20;
 
     private Properties properties = new Properties();
     private BasicDataSource basicDataSource = new BasicDataSource();

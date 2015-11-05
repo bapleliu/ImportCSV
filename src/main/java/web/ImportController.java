@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -50,19 +51,21 @@ public class ImportController extends HttpServlet {
             ServletFileUpload upload = new ServletFileUpload(factory);
             List<FileItem> files = upload.parseRequest(request);
             List<CSVRecord> csvRecords = null;
-            for (FileItem file : files) {
-                Reader reader = new InputStreamReader(file.getInputStream());
-                if (file.getName().endsWith(".csv")) {
-                    CSVParser parser = new CSVParser(reader, CSVFormat.EXCEL.withDelimiter(';'));
-                    csvRecords = parser.getRecords();
-                } else {
-                    request.setAttribute("success", "Not .csv file, try again.");
-                }
+            FileItem file = files.get(0);
+//            for (FileItem file : files) {
+            Reader reader = new InputStreamReader(file.getInputStream());
+            if (file.getName().endsWith(".csv")) {
+                CSVParser parser = new CSVParser(reader, CSVFormat.EXCEL.withDelimiter(';'));
+                csvRecords = parser.getRecords();
+            } else {
+                request.setAttribute("success", "Not .csv file, try again.");
             }
+            //}
+            List<Contact> contactList = new ArrayList<>();
             DAOContact daoContact = new DAOContact();
             int currId = daoContact.getLastId() + 1;
             for (CSVRecord csvRecord : csvRecords) {
-                daoContact.add(new Contact(
+                contactList.add(new Contact(
                         currId,
                         csvRecord.get(0),
                         csvRecord.get(1),
@@ -71,6 +74,11 @@ public class ImportController extends HttpServlet {
                         csvRecord.get(4),
                         0));
                 currId++;
+            }
+            if (null != contactList) {
+                daoContact.addAll(contactList);
+            } else {
+                request.setAttribute("success", "Failed.");
             }
         } else {
             request.setAttribute("success", "Multidownload not allowed.");
