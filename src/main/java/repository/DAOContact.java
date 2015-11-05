@@ -211,7 +211,7 @@ public class DAOContact implements DAOInterface<Contact> {
     }
 
     @Override
-    public List<Contact> asList(int offset, int number) {
+    public List<Contact> asList(int offset, int number, String column, String style) {
         List<Contact> contacts = new ArrayList<>();
         if (null == connection) {
             basicDataSource = DataSource.getInstance().getBasicDataSource();
@@ -219,8 +219,7 @@ public class DAOContact implements DAOInterface<Contact> {
         try {
             connection = basicDataSource.getConnection();
             Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT SQL_CALC_FOUND_ROWS * FROM contact LIMIT "
-                    + offset + ", " + number + ';');
+            ResultSet resultSet = statement.executeQuery("SELECT SQL_CALC_FOUND_ROWS * FROM contact ORDER BY " + column + " " + style + " LIMIT " + offset + ", " + number + ';');
             while (resultSet.next()) {
                 Contact contact = new Contact();
                 contact.setId(resultSet.getInt("id"));

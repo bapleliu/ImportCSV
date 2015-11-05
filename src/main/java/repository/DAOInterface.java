@@ -7,7 +7,7 @@ import java.util.List;
  */
 public interface DAOInterface<Entity> {
     public List<Entity> asList();
-    public List<Entity> asList(int offset, int number);
+    public List<Entity> asList(int offset, int number, String column, String style);
     public void add(Entity entity);
     public void update(Entity entity);
     public void delete(Entity entity);
